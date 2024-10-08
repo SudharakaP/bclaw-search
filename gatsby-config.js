@@ -6,5 +6,6 @@ module.exports = {
     title: `bclaws-search`,
     siteUrl: `https://www.yourdomain.tld`,
   },
+  pathPrefix: "/bclaws-search",
   plugins: [],
 }
