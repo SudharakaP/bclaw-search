@@ -6,7 +6,7 @@ const IndexPage = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const url = `https://cors-anywhere.herokuapp.com/http://www.bclaws.ca/civix/search/complete/fullsearch?q=${searchTerm}&s=0&e=20&nFrag=5&lFrag=100`;
+    const url = `https://www.bclaws.ca/civix/search/complete/fullsearch?q=${searchTerm}&s=0&e=20&nFrag=5&lFrag=100`;
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
